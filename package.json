@@ -1,0 +1,32 @@
+{
+    "name": "chrome-extension-boilerplate",
+    "type": "module",
+    "version": "1.1.1",
+    "description": "simple chrome extension boilerplate",
+    "main": "index.js",
+    "scripts": {
+      "lint": "eslint src .",
+      "lintfix": "eslint src --fix",
+      "prettier": "prettier --write ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/hir06/chrome-extension-boilerplate.git"
+    },
+    "author": "Hiral Parmar",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/hir06/chrome-extension-boilerplate"
+    },
+    "homepage": "https://github.com/hir06/chrome-extension-boilerplate#readme",
+    "devDependencies": {
+      "eslint": "^8.24.0",
+      "eslint-config-google": "^0.14.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-n": "^15.3.0",
+      "eslint-plugin-promise": "^6.0.1",
+      "prettier": "2.7.1"
+    }
+  }
+  

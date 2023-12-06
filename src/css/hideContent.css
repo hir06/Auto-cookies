@@ -1,0 +1,6 @@
+[class*="consent"] {
+    display: none !important;
+}
+#onetrust-consent-sdk {
+    display: none !important;
+}

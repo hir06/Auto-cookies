@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Auto cookies selector",
+  "version": "1.0",
+  "author": "Hiral Parmar",
+  "description": "An extension that will select the cookie preferences for you on all the websites that have a cookie banner.",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "developerPrivate",
+    "webRequestBlocking",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["css/hideContent.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
